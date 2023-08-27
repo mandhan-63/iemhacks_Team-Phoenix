@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
-import Tools from '../../Components/tools/index';
+// import Tools from '../../Components/tools/index';
 import Platforms from '../../Components/Platforms/practice';
 import YTvideos from '../../Components/YT videos/index';
 import Blogs from './../../Components/Blogs/blogs';
