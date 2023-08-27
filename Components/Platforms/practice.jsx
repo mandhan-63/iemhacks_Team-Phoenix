@@ -1,3 +1,9 @@
+/* The above code is a React component that renders a grid of items based on data passed as a prop.
+Each item in the grid contains an image, a name, and a link. The component uses the map function to
+iterate over the data array and render each item in a div with a border, padding, and rounded
+corners. The image is displayed in a centered box with a fixed size, and the name is displayed as a
+link that opens in a new tab when clicked. The component also uses responsive design to adjust the
+layout of the grid based on the screen size. */
 import React from 'react'
 import Image from 'next/image';
 import { BsBoxArrowUpRight } from "react-icons/bs";
@@ -52,7 +58,7 @@ const Practice = () => {
     ];
     return (
         <>
-            <div className='w-full grid grid-cols-3 grid-template-rows-global md:grid-cols-2 sm:grid-cols-1'>
+            <div className='w-full grid grid-cols-3 grid-template-rows-global md:grid-cols-2 sm:grid-cols-1' data-aos="fade-up-left" data-aos-duration="3000">
                 {data.map((d, index) => (
                     <div key={index}>
                         <div className="m-2 border-2 p-4 rounded-md backdrop-blur-sm 
@@ -63,6 +69,7 @@ const Practice = () => {
                                     alt={d.name}
                                     height={2500}
                                     width={2500}
+                                    data-aos="flip-left" data-aos-duration="3000"
                                     className='border-4 border-solid border-main rounded-md flex justify-center items-center w-[12vw] h-[12vw] sm:h-[60px] sm:w-[60px] sm:m-1 md:h-[200px] md:w-[200px]'
                                 />
                             </div>

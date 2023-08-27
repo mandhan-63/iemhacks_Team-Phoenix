@@ -21,7 +21,7 @@ const Footer = () => {
         <div>
           <Link href='/about' title={"About Us"}>About Us</Link>&nbsp; &nbsp;
           <Link href='/contact' title={"Contact Us"}>Contact us</Link>&nbsp; &nbsp;
-          <a href='https://github.com/mandhan-63/iemhacks_Team-Phoenix' title={"Github"} target={"blank"}>Github</a>
+          <a href='https://github.com/Manmohan63/project-phoenix' title={"Github"} target={"blank"}>Github</a>
         </div>
         <div>
           <p>© {new Date().getFullYear()} <a href="https://www.linkedin.com/in/mandhan63/" target={"blank"} title={"Manmohan's LinkedIn"}>Manmohan</a> and <a href="https://www.linkedin.com/in/ishika-poddar30/" target={"blank"} title={"Ishika's LinkedIn"}>Ishika</a>, India</p>

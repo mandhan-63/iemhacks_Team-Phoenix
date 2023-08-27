@@ -104,6 +104,31 @@ const Navbar = ({theme, choosetheme}) => {
     </div>
   )
 }
+const Search = () => {
+  const [name, setname] = useState('');
+  const router = useRouter();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    router.push(`/${name}`);
+    // setname('');
+  };
+  const handleChange = (e) => {
+    setname(e.target.value);
+  };
+  return (
+    <form onSubmit={handleSubmit} className='border-2 border-main rounded-md text-dark__blue m-4 flex items-center justify-center mx-2 md:w-full sm:w-full'>
+      <label className='my-1.5 mx-1 w-[15vw] md:w-full sm:w-full'>
+        <input type="text" className='p-1 w-full rounded-md h-[30px]' placeholder={`Search profiles`}
+          value={name} onChange={handleChange}
+        />
+      </label>
+      <button type='submit' className='p-1 hover:text-dark__blue hover:bg-main mr-1 rounded-md text-main border-2 border-main '>
+        <ImSearch size={15} />
+      </button>
+    </form>
+  );
+
+}
 
 function SignOut({theme}) {
   return (
